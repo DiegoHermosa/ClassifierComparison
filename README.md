@@ -55,7 +55,8 @@ Next we have the dataset feature descriptions, we can see the input variables se
 
 ### Data Preparation and Cleaning
 - Data has no missins values.
-- There several categorical features which will be encoding by TargetEncoder and OrdinalEncoder
+- For the categorical features we will the TargetEncoder and OrdinalEncoder to encode their values, this features are:<br/>
+  - ('job' , 'marital', 'education', 'default', 'housing', 'loan', 'contact', 'month', 'day_of_week', 'poutcome')<br/>
 - The dataser is imbalanced: <br/>
   ![image](https://github.com/DiegoHermosa/ClassifierComparison/assets/160977826/d1b95e56-394b-4e1d-8f79-73fc6113e197)
 
