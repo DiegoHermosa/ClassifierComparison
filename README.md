@@ -4,7 +4,7 @@
 In this practical application, th objective is to compare the performance of the classifiers we encountered in this section, namely K Nearest Neighbor, Logistic Regression, Decision Trees, and Support Vector Machines. We will utilize a dataset related to marketing bank products over the telephone.
 
 ### Data:
-The data can be found in this link
+The data can be found in this link: 
 
 [bank-additional-full.csv](https://github.com/DiegoHermosa/ClassifierComparison/tree/main/data/bank-additional-full.csv)
 
@@ -56,16 +56,19 @@ Next we have the dataset feature descriptions, we can see the input variables se
 ### Data Preparation and Cleaning
 - Data has no missins values.
 - For the categorical features we will the TargetEncoder and OrdinalEncoder to encode their values, this features are:<br/>
-  - ('job' , 'marital', 'education', 'default', 'housing', 'loan', 'contact', 'month', 'day_of_week', 'poutcome')<br/>
+  - job, marital, education, default, housing, loan, contact, month, day_of_week, poutcome<br/>
 - The dataser is imbalanced: <br/>
   ![image](https://github.com/DiegoHermosa/ClassifierComparison/assets/160977826/d1b95e56-394b-4e1d-8f79-73fc6113e197)
 
-
-
-### Simple data and models
+### Classifier comparison
+For the Classifier Comparison, we ran the classifiers in two ways: 
+- Simple model execution using the dataset's bank client data features(columns 1 to 7) only and simple models with default parameters.
+- Improved models with almost all the features excepting those removed after analysing the correlation matrix.
+ 
+### Simple data and model
 In this stage we will use the basic data (features 1 to 7) and run the classification model with the defalt parameters and see the accuracy score behaves.
 
-### Improving data and models
+### Improving data and model
 In this stage we will use more feature and run the classification model with more paramerers and performance metrics
 
 ### Findings
