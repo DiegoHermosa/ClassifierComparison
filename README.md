@@ -54,11 +54,18 @@ Examine the data description below, and determine if any of the features are mis
 - **21. y**: has the client subscribed a term deposit? (binary: 'yes','no') <br/>
 
 ### Data Preparation and Cleaning
+- Data has no missins values.
+- There several categorical features which will be encoding by TargetEncoder and OrdinalEncoder
+- The dataser is imbalanced: <br/>
+  ![image](https://github.com/DiegoHermosa/ClassifierComparison/assets/160977826/d1b95e56-394b-4e1d-8f79-73fc6113e197)
+
 
 
 ### Simple data and models
+In this stage we will use the basic data (features 1 to 7) and run the classification model with the defalt parameters and see the accuracy score behaves.
 
 ### Improving data and models
+In this stage we will use more feature and run the classification model with more paramerers and performance metrics
 
 ### Findings
 1. During this practical application we applied two approaches: one is the basic, with fewer features(bank client data) and simple models, this gave us an initial idea of the data behavior vs the target feature. Then we included more features, after a data correlation analysis we could discard some of them and by the dataset's documentation we removed others which did not make sense to have them in the analysis. This process was valuable because we were getting important insights about the data and about the objetive of the project.
