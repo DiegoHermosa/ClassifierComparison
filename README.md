@@ -103,19 +103,17 @@ In this stage we used more feature and run the classification model with more pa
 3. Feature review by Permutation importances:
    <br/>
    ![image](https://github.com/DiegoHermosa/ClassifierComparison/assets/160977826/b800befb-fdd9-4103-af75-5ad1a2896f4a)
-
-
-   
-
+   <br/>
+ 
 
 ### Findings
 1. During this practical application we applied two approaches: one is the basic, with fewer features(bank client data) and simple models, this gave us an initial idea of the data behavior vs the target feature. Then we included more features, after a data correlation analysis we could discard some of them and by the dataset's documentation we removed others which did not make sense to have them in the analysis. This process was valuable because we were getting important insights about the data and about the objetive of the project.
 2. By Using different Classification algorithms (KNN, Logistic Regression, Decision Tree and SVM) and comparing their performance results we got the best one for this particular dataset is Decision Tree, it got the best Recall and F1 score which are aligned to the objective to correctly identify the most of the subscribers (minimizing false negatives).  
 3. The execution time and training time are factors which could impact on the decision to choose a Classification algorithm but we need to find a balance between those times and the scores we could get from the differents models. CRISP-DM allows to iteratively improve our data and the parameters to get the best performances.
-4. Identify the most important featuures is a key part in the understanding of the prediction, by analysing their data distribution and relation to the target feature (subscribed) we could determine why the customer took the decision to accept the bank term deposit, for example:
-- Euribor3m (Euribor 3 month rate - daily indicator)
-- Month (Last contact month of year)
-- Pdays (Number of days that passed by after the client was last contacted from a previous campaign)
+4. Identify the most important features is a key part in the understanding of the prediction, by analysing their data distribution and relation to the target feature (subscribed) we could determine why the customer took the decision to accept the bank term deposit, for example:
+   - Euribor3m (Euribor 3 month rate - daily indicator)
+   - Month (Last contact month of year)
+   - Pdays (Number of days that passed by after the client was last contacted from a previous campaign)
 
 ### Next Steps and Recomendations
 1. Improve the Classification process by adding tools to handle the imbalanced dataset, as we can see, this dataset is imbalanced which yields some metrics can be misleading between them. One improvement we could do in this process the Resampling Techniques:
