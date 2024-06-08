@@ -1,7 +1,7 @@
 # Comparing Classifiers
 
 ### Overview
-In this practical application, your goal is to compare the performance of the classifiers we encountered in this section, namely K Nearest Neighbor, Logistic Regression, Decision Trees, and Support Vector Machines. We will utilize a dataset related to marketing bank products over the telephone.
+In this practical application, th objective is to compare the performance of the classifiers we encountered in this section, namely K Nearest Neighbor, Logistic Regression, Decision Trees, and Support Vector Machines. We will utilize a dataset related to marketing bank products over the telephone.
 
 ### Data:
 The data can be found in this link
@@ -14,10 +14,10 @@ The following notebook contains all the development of the analysis carried out.
 [prompt_III.ipynb](https://github.com/DiegoHermosa/ClassifierComparison/tree/main/prompt_III.ipynb)
 
 ### Business Understanding
-The main task to be performed in this particular case is to understand what makes a customer accept or not to subscribe to a bank account (deposit) and to verify which are the characteristics that most influence this decision. For this purpose, a dataset of 41187 records has been provided from which information has been collected on several characteristics related to the customer.
+The task is intended to understand what drives a customer to accept or not subscribing a bank term deposit and to verify which are the features that most influence this decision. For this purpose, a dataset of 41187 records has been provided from which information has been collected on several characteristics related to the customer. The data represents 17 marketing campaigns which were done during May 2008 until Nov 2010.
 
 ### Data Understanding
-Examine the data description below, and determine if any of the features are missing values or need to be coerced to a different data type.
+Next we have the dataset feature descriptions, we can see the input variables section where the feature have been organized in several categories according to the source of the information they represent: bank client data, last contact, other attributes, social and economic context. As the output variable we have the "y" feature which stores the customer's decision about be subcribed or not to the bank product.
 
 #### Input variables:
 
