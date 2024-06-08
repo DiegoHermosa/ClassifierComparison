@@ -57,7 +57,7 @@ Next we have the dataset feature descriptions, we can see the input variables se
 - Data has no missins values.
 - For the categorical features we will the TargetEncoder and OrdinalEncoder to encode their values, this features are:<br/>
   - job, marital, education, default, housing, loan, contact, month, day_of_week, poutcome<br/>
-- The dataser is imbalanced: <br/>
+- The dataset is imbalanced: <br/>
   ![image](https://github.com/DiegoHermosa/ClassifierComparison/assets/160977826/d1b95e56-394b-4e1d-8f79-73fc6113e197)
 
 ### Classifier comparison
@@ -66,10 +66,47 @@ For the Classifier Comparison, we ran the classifiers in two ways:
 - Improved models with almost all the features excepting those removed after analysing the correlation matrix.
  
 ### Simple data and model
-In this stage we will use the basic data (features 1 to 7) and run the classification model with the defalt parameters and see the accuracy score behaves.
+We used the basic data (features 1 to 7) and run the classification model with the defalt parameters and see the accuracy score behaves.<br/>
+1. The correlation matrix of the 7 features:
+   ![image](https://github.com/DiegoHermosa/ClassifierComparison/assets/160977826/fe2b05bd-7e21-465f-b011-1c2dc536e06c)
+
+   <br/>
+   
+   ![image](https://github.com/DiegoHermosa/ClassifierComparison/assets/160977826/0ef1ee2e-9867-42e7-8ab3-c2678b17cac3)
+
+3. Simple model performance metrics(Time and Accuracy score) <br/>
+![image](https://github.com/DiegoHermosa/ClassifierComparison/assets/160977826/32450487-1872-4246-874a-4632e4c7e617) <br/>
+
+The above results of this basic dataset(first 7 features ) and basic models show us:
+- All models got results
+- In terms of Training time the Logisitic Regression is the best.
+- In terms of Test Accuracy the Logisitic Regression is the best along with the SVM, but this one took more training time.
+
 
 ### Improving data and model
-In this stage we will use more feature and run the classification model with more paramerers and performance metrics
+In this stage we used more feature and run the classification model with more paramerers and performance metrics.
+1. The correlation matrix of the all features:<br/>
+   ![image](https://github.com/DiegoHermosa/ClassifierComparison/assets/160977826/1ab12b98-eae4-447f-ade1-f9eb4860b4c8)
+   <br/>
+   - There are several characteristics with a high correlation between them ('emp.var.rate', 'cons.price.idx', 'nr.employed'), these will removed to get the final dataframe   
+  
+2. After removing the features mentioned above, we ran the model with their repective hyperparamerers using cross validation to get the best estimator. Next is the performance metrics. <br/>
+   ![image](https://github.com/DiegoHermosa/ClassifierComparison/assets/160977826/2a3ae28a-6caa-4c28-985a-d82d6f166e54)
+   <br/>
+   <br/>
+   **Improved Model Metrics Comparison** <br/>
+   ![image](https://github.com/DiegoHermosa/ClassifierComparison/assets/160977826/206df569-213d-455a-b5be-87005c086935)
+   <br/>
+   -  The results show us Decision Tree got the best Recall and F1 score which are aligned to the objective to correctly identify the most of the subscribers (minimizing false negatives).
+   -  Despite the Decision Tree took a considerable execution time compared to the others, we considered it is the best choice for this kind of task, however we need continue improving it to get best times and efficiency.   
+
+3. Feature review by Permutation importances:
+   <br/>
+   ![image](https://github.com/DiegoHermosa/ClassifierComparison/assets/160977826/b800befb-fdd9-4103-af75-5ad1a2896f4a)
+
+
+   
+
 
 ### Findings
 1. During this practical application we applied two approaches: one is the basic, with fewer features(bank client data) and simple models, this gave us an initial idea of the data behavior vs the target feature. Then we included more features, after a data correlation analysis we could discard some of them and by the dataset's documentation we removed others which did not make sense to have them in the analysis. This process was valuable because we were getting important insights about the data and about the objetive of the project.
