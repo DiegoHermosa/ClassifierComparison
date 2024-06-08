@@ -11,7 +11,7 @@ The data can be found in this link
 Notebook Link
 The following notebook contains all the development of the analysis carried out.
 
-[prompt_III.ipynb](https://github.com/DiegoHermosa/ClassifierComparison/tree/main/data/prompt_III.ipynb)
+[prompt_III.ipynb](https://github.com/DiegoHermosa/ClassifierComparison/tree/main/prompt_III.ipynb)
 
 ### Business Understanding
 The main task to be performed in this particular case is to understand what makes a customer accept or not to subscribe to a bank account (deposit) and to verify which are the characteristics that most influence this decision. For this purpose, a dataset of 41187 records has been provided from which information has been collected on several characteristics related to the customer.
