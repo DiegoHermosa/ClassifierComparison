@@ -117,11 +117,11 @@ In this stage we used more feature and run the classification model with more pa
 
 ### Next Steps and Recomendations
 1. Improve the Classification process by adding tools to handle the imbalanced dataset, as we can see, this dataset is imbalanced which yields some metrics can be misleading between them. One improvement we could do in this process the Resampling Techniques:
-- Oversampling: Duplicate samples from the minority class to increase its representation.
-- Undersampling: Remove samples from the majority class to balance the dataset.
-- SMOTE (Synthetic Minority Oversampling Technique): Generates synthetic data points for the minority class.
+   - Oversampling: Duplicate samples from the minority class to increase its representation.
+   - Undersampling: Remove samples from the majority class to balance the dataset.
+   - SMOTE (Synthetic Minority Oversampling Technique): Generates synthetic data points for the minority class.
 
-2. Analyse the the other features, for the scope of this project, we reviewed the top 3 features, the others need to be analyzed to get more valuable information.
+2. Analyse the other features, for the scope of this project, we reviewed the top 3 features, the others need to be analyzed to get more valuable information. With this information the marketing campaigns can be improved by focusing on the key aspects which drive the customers' decisions.
 
 ### References
 - The dataset comes from UCI Machine Learning repository [link](https://archive.ics.uci.edu/ml/datasets/bank+marketing).  The data is from a Portugese banking institution and is a collection of the results of multiple marketing campaigns
